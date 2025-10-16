@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>÷ Calcolatore di proporzioni online</title>
+    <meta name="description" content="Strumento di calcolo matematico semplice e croccante. Inserisci i valori e calcola la tua proporzione." />
+
+    <meta name="keywords" content="proporzioni, calcolo, divisione, moltiplicazione, operazione" />
+    <meta name="author" content="Marco Gargano" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#ffc0cb" />
 
-    <title>Calcolatore di proporzioni online ÷</title>
-    <meta name="description" content="Strumento di calcolo matematico semplice e croccante. Inserisci i valori e calcola la tua proporzione." />
+    <meta property="og:url" content="https://calcola-proporzione.github.io//" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="÷ Calcolatore di proporzioni online" />
+    <meta property="og:description" content="Strumento di calcolo matematico semplice e croccante. Inserisci i valori e calcola la tua proporzione." />
+    <meta property="og:image" content="https://calcola-proporzione.github.io//img/share.jpg" />
 
     <link rel="stylesheet" href="/css/style-bs.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -23,8 +32,8 @@
         </div>
       </div>
     </div>
-    <div class="container p-4 bg-light rounded-3 shadow-lg">
-      <form id="calcoloForm" action="">
+    <div class="container">
+      <form id="calcoloForm" class="p-4 bg-light rounded-3 shadow-lg" action="">
         <div class="d-flex text-center">
           <div class="w-100 p-2">
             <div class="form-floating">
@@ -61,21 +70,21 @@
     <div class="container mt-5 mb-3">
       <div class="row">
         <div class="col">
-          <details>
-            <summary class="p-2 px-4 bg-primary bg-opacity-10 rounded-pill">Cosa è una proporzione? Di seguito una definizione</summary>
-            <p class="pt-3">In matematica, una proporzione è l'uguaglianza tra due rapporti. In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra loro proporzionali.</p>
+          <details class="p-3 rounded-3 px-4 bg-primary bg-opacity-10">
+            <summary class="">Cosa è una proporzione? Di seguito una definizione</summary>
+            <p class="pt-4">In matematica, una proporzione è l'uguaglianza tra due rapporti. In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra loro proporzionali.</p>
             <p class="">
               La proprietà fondamentale delle proporzioni afferma che il prodotto dei medi è uguale al prodotto degli estremi. Se <code><strong>a:b=c:d</strong></code
               >, allora <code><strong>a×d=b×c</strong></code
               >.
             </p>
-            <p class="mb-1">Per esempio, consideriamo la proporzione: <code>6 : 2 = 15 : 5</code> </p>
+            <p class="mb-1">Per esempio, consideriamo la proporzione: <code class="text-nowrap ms-2">6 : 2 = 15 : 5</code> </p>
             <ul class="mb-2">
               <li class="">
-                il prodotto dei medi è: <code>2 × 15 = <strong>30</strong></code>
+                il prodotto dei medi è: <code class="text-nowrap ms-2">2 × 15 = <strong>30</strong></code>
               </li>
               <li class="">
-                il prodotto degli estremi è: <code>6 × 5 = <strong>30</strong></code>
+                il prodotto degli estremi è: <code class="text-nowrap ms-2">6 × 5 = <strong>30</strong></code>
               </li>
             </ul>
             <p class="">
@@ -87,9 +96,6 @@
       </div>
     </div>
 
-    <script type="module">
-      import { initCalcoloForm } from "/js/calcolo.js";
-      initCalcoloForm("#calcoloForm", "it-IT"); // o 'en-US' per formato anglosassone
-    </script>
+    <script src="/js/calcolo.js"></script>
   </body>
 </html>

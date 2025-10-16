@@ -1,40 +1,49 @@
-// calcolo.js
-export function calcolaRisultato(x1, y1, y2) {
-  if (isNaN(x1) || isNaN(y1) || isNaN(y2)) {
-    return "—";
-  }
-  if (y1 === 0) {
-    return "❌";
-  }
-  return (x1 * y2 / y1).toFixed(5);
-}
-
-export function initCalcoloForm(formSelector) {
-  const form = document.querySelector(formSelector);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#calcoloForm");
   if (!form) return;
 
-  const x1Input = form.querySelector("[name='x1']");
-  const y1Input = form.querySelector("[name='y1']");
-  const y2Input = form.querySelector("[name='y2']");
-  const output = form.querySelector(".risultato");
+  const aInput = form.querySelector("[name='x1']"); // a
+  const bInput = form.querySelector("[name='y1']"); // b
+  const cInput = form.querySelector("[name='y2']"); // c
+  const output = form.querySelector(".risultato");  // x (risultato finale)
 
-  if (!x1Input || !y1Input || !y2Input || !output) return;
+  if (!aInput || !bInput || !cInput || !output) return;
 
-  const aggiornaRisultato = () => {
-    const x1 = parseFloat(x1Input.value);
-    const y1 = parseFloat(y1Input.value);
-    const y2 = parseFloat(y2Input.value);
-    output.textContent = calcolaRisultato(x1, y1, y2);
-  };
+  function calcolaProporzione() {
+    const a = parseFloat(aInput.value);
+    const b = parseFloat(bInput.value);
+    const c = parseFloat(cInput.value);
 
-  // Calcola in tempo reale su input o cambio valore
-  [x1Input, y1Input, y2Input].forEach(input => {
-    input.addEventListener("input", aggiornaRisultato);
-  });
+    // Se uno dei campi non è compilato → nessun risultato
+    if (!isFinite(a) || !isFinite(b) || !isFinite(c)) {
+      output.textContent = "×";
+      return;
+    }
 
-  // Calcolo iniziale (opzionale)
-  aggiornaRisultato();
-}
+    // Evita divisione per 0
+    if (a === 0) {
+      output.textContent = "❌";
+      return;
+    }
 
+    // Formula proporzione: a : b = c : x → x = (b * c) / a
+    const x = (b * c) / a;
 
+    // Arrotonda a 5 decimali, rimuove zeri inutili
+    const xPulito = parseFloat(x.toFixed(5));
 
+    // Formattazione in stile italiano
+    output.textContent = xPulito.toLocaleString("it-IT", {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 5,
+    });
+  }
+
+  // Ricalcolo in tempo reale
+  [aInput, bInput, cInput].forEach(input =>
+    input.addEventListener("input", calcolaProporzione)
+  );
+
+  // Calcolo iniziale
+  calcolaProporzione();
+});
