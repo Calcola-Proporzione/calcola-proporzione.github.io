@@ -1,0 +1,35 @@
+:root {
+	/* --- Set your font family --- */
+	--bs-font-sans-serif: Arial, sans-serif;
+	--bs-body-font-size: 2rem;
+	--bs-body-color: #000;
+	--bs-body-color-rgb: 0, 0, 0;
+	--bs-btn-color: var(--bs-white);
+	--bs-btn-color-rgb: var(--bs-white-rgb);
+
+	/* --- Set your primary and secondary color --- */
+	--bs-primary: #222;
+	--bs-primary-rgb: 34, 34, 34;
+	--bs-secondary: #ffc0cb;
+	--bs-secondary-rgb: 255, 192, 203;
+
+	/* --- Set your border-radius --- */
+	--bs-border-radius: 0.4rem;
+}
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+	background: transparent;
+}
+
+html,
+body {
+	background: var(--bs-secondary) !important;
+}
+.container {
+	max-width: 620px;
+}
+.form-floating label {
+	font-size: 50%;
+}
