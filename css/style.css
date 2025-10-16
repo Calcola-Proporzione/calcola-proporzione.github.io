@@ -1,7 +1,7 @@
 :root {
 	/* --- Set your font family --- */
 	--bs-font-sans-serif: Arial, sans-serif;
-	--bs-body-font-size: 2rem;
+	--bs-body-font-size: 1.1rem;
 	--bs-body-color: #000;
 	--bs-body-color-rgb: 0, 0, 0;
 	--bs-btn-color: var(--bs-white);
@@ -23,13 +23,12 @@
 	background: transparent;
 }
 
-html,
-body {
-	background: var(--bs-secondary) !important;
-}
 .container {
 	max-width: 620px;
 }
-.form-floating label {
+/* .form-floating label {
 	font-size: 50%;
+} */
+code {
+  letter-spacing: 1px;
 }
