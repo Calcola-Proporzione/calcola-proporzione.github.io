@@ -26,7 +26,7 @@
 }
 
 /* --- Customization --- */
-h1, input {
+.h1, input {
 	font-weight: 700 !important;
 }
 input, code {
@@ -65,5 +65,27 @@ strong {
 	}
   #calcoloForm .d-flex .w-100 {
     width: 49% !important;
+  }
+}
+
+.woila {
+  opacity: 0;
+  animation: woila 2s ease-in-out forwards;
+}
+.woila-1 {
+  animation-delay: .5s;
+}
+.woila-2 {
+  animation-delay: 1s;
+}
+.woila-3 {
+  animation-delay: 1.5s;
+}
+@keyframes woila {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

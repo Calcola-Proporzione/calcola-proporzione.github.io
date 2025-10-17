@@ -23,16 +23,23 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="bg-secondary">
-    <div class="container-sm mt-5 mb-4 pt-5">
+    <div class="container-sm mt-5 pt-5 woila">
       <div class="row">
         <div class="col">
-          <h1 class="lh-1 mb-5">÷ Calcolatore di proporzioni online</h1>
-          <h2 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h2>
+          <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola proporzione</small></h1>
+          <h2 class="h1 lh-1">÷ Calcolatore di proporzioni online</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-sm mt-5 mb-4 woila woila-1">
+      <div class="row">
+        <div class="col">
+          <h3 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h3>
           <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code class="text-nowrap">a&#58;b&#61;c&#58;d</code>, come per esempio <code class="text-nowrap">16&#58;9&#61;100&#58;X</code> &#8658; <code class="text-nowrap">X&#61;(9&times;100)/16</code>.</p>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container woila woila-2">
       <form id="calcoloForm" class="p-3 p-md-4 bg-light rounded-3 shadow-lg" action="">
         <div class="d-flex flex-column flex-md-row text-center">
           <div class="w-100 p-2">
@@ -59,32 +66,21 @@
         </div>
       </form>
     </div>
-
-    <div class="container-sm my-5">
+    <div class="container-sm my-5 woila woila-3">
       <div class="row">
         <div class="col">
           <details class="p-3 rounded-3 px-4 bg-primary bg-opacity-10">
-            <summary class="">Cosa è una proporzione? Di seguito una definizione...</summary>
+            <summary>Cosa è una proporzione? Di seguito una definizione...</summary>
             <p class="pt-4">In matematica, una proporzione è <strong>l'uguaglianza tra due rapporti</strong>. 
               In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra loro proporzionali.</p>
-            <p class="">
-              La proprietà fondamentale delle proporzioni afferma che <strong>il prodotto dei medi è uguale al prodotto degli estremi</strong>. 
-            </p>
-            <p class="">
-              Se <code><strong>a&#58;b&#61;c&#58;d</strong></code>, allora <code><strong>a&times;d&#61;b&times;c</strong></code>.
-            </p>
-            <p class="mb-1">Per esempio, consideriamo la proporzione: <code class="text-nowrap ms-2">6&#58;2&#61;15&#58;5</code></p>
+            <p>La proprietà fondamentale delle proporzioni afferma che <strong>il prodotto dei medi è uguale al prodotto degli estremi</strong>. </p>
+            <p>Se <code><strong>a&#58;b&#61;c&#58;d</strong></code>, allora <code><strong>a&times;d&#61;b&times;c</strong></code>.</p>
+            <p class="mb-1">Per esempio, consideriamo la proporzione: <code class="text-nowrap">6&#58;2&#61;15&#58;5</code></p>
             <ul class="mb-2">
-              <li class="">
-                il prodotto dei medi è: <code class="text-nowrap ms-2">2&times;15&#61;<strong>30</strong></code>
-              </li>
-              <li class="">
-                il prodotto degli estremi è: <code class="text-nowrap ms-2">6&times;5&#61;<strong>30</strong></code>
-              </li>
+              <li>il prodotto dei medi è: <code class="text-nowrap">2&times;15&#61;<strong>30</strong></code></li>
+              <li>il prodotto degli estremi è: <code class="text-nowrap">6&times;5&#61;<strong>30</strong></code></li>
             </ul>
-            <p class="">
-              Poiché i due prodotti sono entrambi uguali a <code><strong>30</strong></code>, la proporzione è valida!
-            </p>
+            <p>Poiché i due prodotti sono entrambi uguali a <code><strong>30</strong></code>, la proporzione è valida!</p>
           </details>
         </div>
       </div>
@@ -92,7 +88,5 @@
 
     <script src="/js/confetti.min.js"></script>
     <script src="/js/calcolo.js"></script>
-
-
   </body>
 </html>
