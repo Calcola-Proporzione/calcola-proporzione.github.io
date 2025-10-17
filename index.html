@@ -36,28 +36,25 @@
       <form id="calcoloForm" class="p-4 bg-light rounded-3 shadow-lg" action="">
         <div class="d-flex text-center">
           <div class="w-100 p-2">
-            <div class="form-floating">
-              <input type="number" step="any" name="x1" class="form-control fs-3" id="valore-01" placeholder="16" />
-              <label for="valore-01">a</label>
+            <div class="">
+              <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3" id="valore-01" placeholder="a" />
             </div>
           </div>
           <div class="col py-4">:</div>
           <div class="w-100 p-2">
-            <div class="form-floating">
-              <input type="number" step="any" name="y1" class="form-control fs-3" id="valore-02" placeholder="9" />
-              <label for="valore-02">b</label>
+            <div class="">
+              <input type="number" step="any" name="y1" class="form-control fs-3" id="valore-02" placeholder="b" />
             </div>
           </div>
           <div class="col py-4">=</div>
           <div class="w-100 p-2">
-            <div class="form-floating">
-              <input type="number" step="any" name="y2" class="form-control fs-3" id="valore-03" placeholder="200" />
-              <label for="valore-03">c</label>
+            <div class="">
+              <input type="number" step="any" name="y2" class="form-control fs-3" id="valore-03" placeholder="c" />
             </div>
           </div>
           <div class="col py-4">:</div>
           <div class="w-100 p-2">
-            <p class="risultato fs-3 pt-3 mb-0 border bg-white"></p>
+            <p class="bg-info-subtle border rounded-1 fs-3 mb-0 pb-1 py-2 risultato"></p>
             <!-- <div class="form-floating">
               <input type="number"  step="any" name="x1" class="form-control fs-3" id="valore-04" placeholder="D" value="D" />
               <label for="valore-04">D</label>
@@ -88,14 +85,16 @@
               </li>
             </ul>
             <p class="">
-              Poiché i due prodotti sono entrambi uguali a <code><strong>30</strong></code
-              >, la proporzione è valida!
+              Poiché i due prodotti sono entrambi uguali a <code><strong>30</strong></code>, la proporzione è valida!
             </p>
           </details>
         </div>
       </div>
     </div>
 
+    <script src="js/confetti.min.js"></script>
     <script src="/js/calcolo.js"></script>
+
+
   </body>
 </html>

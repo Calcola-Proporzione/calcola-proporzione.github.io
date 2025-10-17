@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!aInput || !bInput || !cInput || !output) return;
 
+  // Configurazione confetti
+  output.id = "risultato-confetti";
+  const confetti = new Confetti("risultato-confetti");
+  confetti.setCount(75);
+  confetti.setSize(1);
+  confetti.setPower(25);
+  confetti.setFade(false);
+  confetti.destroyTarget(false);
+
   function calcolaProporzione() {
     const a = parseFloat(aInput.value);
     const b = parseFloat(bInput.value);
@@ -43,6 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
   [aInput, bInput, cInput].forEach(input =>
     input.addEventListener("input", calcolaProporzione)
   );
+
+  // Observer per i confetti quando cambia il risultato
+  let previousResult = output.textContent;
+  const observer = new MutationObserver(() => {
+    const currentResult = output.textContent;
+    if (currentResult !== previousResult && currentResult !== "×" && currentResult !== "❌") {
+      const rect = output.getBoundingClientRect();
+      const event = new MouseEvent('click', {
+        clientX: rect.left + rect.width / 2,
+        clientY: rect.top + rect.height / 2
+      });
+      output.dispatchEvent(event);
+    }
+    previousResult = currentResult;
+  });
+  
+  observer.observe(output, { childList: true, characterData: true, subtree: true });
 
   // Calcolo iniziale
   calcolaProporzione();
