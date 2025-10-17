@@ -23,48 +23,44 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="bg-secondary">
-    <div class="container mt-5 mb-4">
+    <div class="container-sm mt-5 mb-4 pt-5">
       <div class="row">
         <div class="col">
           <h1 class="lh-1 mb-5">÷ Calcolatore di proporzioni online</h1>
           <h2 class="fs-5"><strong>Strumento di calcolo matematico semplice e croccante.</strong></h2>
-          <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code class="text-nowrap">a:b=c:d</code>, come per esempio <code class="text-nowrap">16:9=100:X</code> .</p>
+          <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code class="text-nowrap">a:b=c:d</code>, come per esempio <code class="text-nowrap">16:9=100:X</code> ⇒ <code class="text-nowrap">X=(9×100)/16</code>.</p>
         </div>
       </div>
     </div>
     <div class="container">
-      <form id="calcoloForm" class="p-4 bg-light rounded-3 shadow-lg" action="">
-        <div class="d-flex text-center">
+      <form id="calcoloForm" class="p-3 p-md-4 bg-light rounded-3 shadow-lg" action="">
+        <div class="d-flex flex-column flex-md-row text-center">
           <div class="w-100 p-2">
             <div class="">
-              <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3" id="valore-01" placeholder="a" />
+              <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3 text-center" id="valore-01" placeholder="a" />
             </div>
           </div>
-          <div class="col py-4">:</div>
+          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
           <div class="w-100 p-2">
             <div class="">
-              <input type="number" step="any" name="y1" class="form-control fs-3" id="valore-02" placeholder="b" />
+              <input type="number" step="any" name="y1" class="form-control form-control-lg fs-3 text-center" id="valore-02" placeholder="b" />
             </div>
           </div>
-          <div class="col py-4">=</div>
+          <div class="fs-3 pt-3"><strong>&#61;</strong></div>
           <div class="w-100 p-2">
             <div class="">
-              <input type="number" step="any" name="y2" class="form-control fs-3" id="valore-03" placeholder="c" />
+              <input type="number" step="any" name="y2" class="form-control form-control-lg fs-3 text-center" id="valore-03" placeholder="c" />
             </div>
           </div>
-          <div class="col py-4">:</div>
+          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
           <div class="w-100 p-2">
-            <p class="bg-info-subtle border rounded-1 fs-3 mb-0 pb-1 py-2 risultato"></p>
-            <!-- <div class="form-floating">
-              <input type="number"  step="any" name="x1" class="form-control fs-3" id="valore-04" placeholder="D" value="D" />
-              <label for="valore-04">D</label>
-            </div> -->
+            <p class="bg-info-subtle border rounded-1 fs-3 mb-0 pb-1 py-2 fw-bold risultato"></p>
           </div>
         </div>
       </form>
     </div>
 
-    <div class="container mt-5 mb-3">
+    <div class="container-sm mt-5 mb-3">
       <div class="row">
         <div class="col">
           <details class="p-3 rounded-3 px-4 bg-primary bg-opacity-10">

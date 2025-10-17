@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Se uno dei campi non è compilato → nessun risultato
     if (!isFinite(a) || !isFinite(b) || !isFinite(c)) {
-      output.textContent = "×";
+      output.textContent = "x";
       return;
     }
 

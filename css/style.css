@@ -1,34 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
 :root {
-	/* --- Set your font family --- */
-	--bs-font-sans-serif: Arial, sans-serif;
-	--bs-body-font-size: 1.1rem;
-	--bs-body-color: #000;
-	--bs-body-color-rgb: 0, 0, 0;
-	--bs-btn-color: var(--bs-white);
-	--bs-btn-color-rgb: var(--bs-white-rgb);
+  /* --- Set your font family --- */
+  --bs-font-sans-serif: "Gabarito", sans-serif;
+  --bs-body-font-size: 1.1rem;
+  --bs-body-color: #000;
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-color-rgb: var(--bs-white-rgb);
 
-	/* --- Set your primary and secondary color --- */
-	--bs-primary: #222;
-	--bs-primary-rgb: 34, 34, 34;
-	--bs-secondary: #ffc0cb;
-	--bs-secondary-rgb: 255, 192, 203;
+  /* --- Set your primary and secondary color --- */
+  --bs-primary: #222;
+  --bs-primary-rgb: 34, 34, 34;
+  --bs-secondary: #ffc0cb;
+  --bs-secondary-rgb: 255, 192, 203;
 
-	/* --- Set your border-radius --- */
-	--bs-border-radius: 0.4rem;
+  /* --- Set your border-radius --- */
+  --bs-border-radius: 0.4rem;
+}
+
+/* --- Customization --- */
+h1, input {
+	font-weight: 700 !important;
+}
+input, code {
+  letter-spacing: 1px;
+}
+.container-sm {
+  max-width: 560px;
 }
 .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-select ~ label::after {
-	background: transparent;
+  background: transparent;
 }
+.risultato {
+	cursor: progress;
+}
+@media (max-width: 767px) {
+  #calcoloForm .d-flex {
+    display: inline-block !important;
+  }
 
-.container {
-	max-width: 620px;
-}
-/* .form-floating label {
-	font-size: 50%;
-} */
-code {
-  letter-spacing: 1px;
+  #calcoloForm .d-flex > div {
+    float: left;
+    width: 2% !important;
+  }
+	#calcoloForm .d-flex > div:nth-child(4) {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+  #calcoloForm .d-flex .w-100 {
+    width: 49% !important;
+  }
 }
