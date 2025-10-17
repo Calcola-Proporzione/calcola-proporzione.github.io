@@ -1,8 +1,9 @@
 @font-face {
-    font-family: "Red Hat Display";
-    src: url('/font/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Red Hat Display";
+	src: url('/font/RedHatDisplay.ttf') format('truetype');
+	font-optical-sizing: auto;
+  font-weight: 300 900;
+  font-style: normal;
 }
 
 :root {
@@ -33,6 +34,9 @@ input, code {
 }
 code {
 	color: #673ab7;
+}
+strong {
+	font-weight: 700;
 }
 .container-sm {
   max-width: 620px;
