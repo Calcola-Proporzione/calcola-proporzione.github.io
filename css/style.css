@@ -1,6 +1,8 @@
 @font-face {
 	font-family: "Red Hat Display";
-	src: url('/font/RedHatDisplay.ttf') format('truetype');
+  src: local("Red Hat Display"),
+    local("RedHatDisplay"),
+    url('/font/RedHatDisplay.ttf') format('truetype');
 	font-optical-sizing: auto;
   font-weight: 300 900;
   font-style: normal;
