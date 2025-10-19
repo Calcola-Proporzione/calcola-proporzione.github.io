@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="public, max-age=86400">
+  <meta http-equiv="Expires" content="Tue, 01 Jan 2030 00:00:00 GMT">
 
   <title>÷ Calcolatore di proporzioni online</title>
   <meta name="description"
@@ -21,12 +23,12 @@
     content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
   <meta property="og:image" content="https://calcola-proporzione.github.io//img/calcola-proporzione-share.jpg" />
 
-  <link rel="stylesheet" href="/css/style-bs.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/style-bs.css?v=1.0" />
+  <link rel="stylesheet" href="/css/style.css?v=1.0" />
 </head>
 
 <body class="min-vh-100 bg-secondary">
-  <div class="container-sm woila">
+  <div class="container-sm woila" role="main">
     <div class="row">
       <div class="col mt-5 pt-5">
         <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola
@@ -46,7 +48,7 @@
       </div>
     </div>
   </div>
-  <div class="container mb-5 woila woila-2">
+  <div class="container mb-5 woila woila-2" role="form">
     <form id="calcoloForm" class="p-3 p-md-4 bg-light rounded-3 shadow-lg" action="">
       <div class="d-flex flex-column flex-md-row text-center">
         <div class="w-100 p-2">
@@ -76,7 +78,7 @@
       </div>
     </form>
   </div>
-  <div class="container-sm my-5 woila woila-3">
+  <div class="container-sm my-5 woila woila-3" role="contentinfo">
     <hr class="container-sm mb-5 w-25 border-0 opacity-75">
     <div class="row">
       <div class="col">
@@ -126,10 +128,10 @@
     </div>
   </div>
   <div class="container-sm my-3 woila woila-3">
-    <p class="text-primary text-opacity-50 fs-6">Questo sito non utilizza cookies e non raccoglie alcun dato per rispettare la privacy.</p>
+    <p class="text-primary text-opacity-75 fs-6">Questo sito non utilizza cookies e non raccoglie alcun dato per rispettare la privacy.</p>
   </div>
-  <script src="/js/confetti.min.js"></script>
-  <script src="/js/calcolo.js"></script>
+  <script defer src="/js/confetti.min.js?v=1.0" ></script>
+  <script defer src="/js/calcolo.js?v=1.0"></script>
 </body>
 
 </html>
