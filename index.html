@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>÷ Calcolatore di proporzioni online</title>
-    <meta name="description" content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
+  <title>÷ Calcolatore di proporzioni online</title>
+  <meta name="description"
+    content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
 
-    <meta name="keywords" content="proporzioni, calcolo, divisione, moltiplicazione, operazione" />
-    <meta name="author" content="Marco Gargano" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
-    <meta name="theme-color" content="#ffc0cb" />
+  <meta name="keywords" content="proporzioni, calcolo, divisione, moltiplicazione, operazione" />
+  <meta name="author" content="Marco Gargano" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+  <meta name="theme-color" content="#ffc0cb" />
 
-    <meta property="og:url" content="https://calcola-proporzione.github.io//" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="÷ Calcolatore di proporzioni online" />
-    <meta property="og:description" content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
-    <meta property="og:image" content="https://calcola-proporzione.github.io//img/calcola-proporzione-share.jpg" />
+  <meta property="og:url" content="https://calcola-proporzione.github.io//" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="÷ Calcolatore di proporzioni online" />
+  <meta property="og:description"
+    content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
+  <meta property="og:image" content="https://calcola-proporzione.github.io//img/calcola-proporzione-share.jpg" />
 
-    <link rel="stylesheet" href="/css/style-bs.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body class="bg-secondary">
-    <div class="container-sm mt-5 pt-5 woila">
-      <div class="row">
-        <div class="col">
-          <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola proporzione</small></h1>
-          <h2 class="h1 lh-1">÷ Calcolatore di proporzioni online</h2>
-        </div>
+  <link rel="stylesheet" href="/css/style-bs.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="min-vh-100 bg-secondary">
+  <div class="container-sm woila">
+    <div class="row">
+      <div class="col mt-5 pt-5">
+        <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola
+            proporzione</small></h1>
+        <h2 class="h1 lh-1">÷ Calcolatore di proporzioni online</h2>
       </div>
     </div>
-    <div class="container-sm mt-5 mb-4 woila woila-1">
-      <div class="row">
-        <div class="col">
-          <h3 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h3>
-          <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code class="text-nowrap">a&#58;b&#61;c&#58;d</code>, come per esempio <code class="text-nowrap">4&#58;3&#61;100&#58;X</code> &#8658; <code class="text-nowrap">X&#61;(3&times;100)/4</code>.</p>
-        </div>
+  </div>
+  <div class="container-sm mt-5 mb-4 woila woila-1">
+    <div class="row">
+      <div class="col">
+        <h3 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h3>
+        <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code
+            class="text-nowrap">a&#58;b&#61;c&#58;d</code>, come per esempio <code
+            class="text-nowrap">4&#58;3&#61;100&#58;X</code> &#8658; <code
+            class="text-nowrap">X&#61;(3&times;100)/4</code>.</p>
       </div>
     </div>
-    <div class="container woila woila-2">
-      <form id="calcoloForm" class="p-3 p-md-4 bg-light rounded-3 shadow-lg" action="">
-        <div class="d-flex flex-column flex-md-row text-center">
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3 text-center" id="valore-01" placeholder="a" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="y1" class="form-control form-control-lg fs-3 text-center" id="valore-02" placeholder="b" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#61;</strong></div>
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="y2" class="form-control form-control-lg fs-3 text-center" id="valore-03" placeholder="c" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
-          <div class="w-100 p-2">
-            <p class="bg-info-subtle border rounded-1 fs-3 mb-0 pb-1 py-2 fw-bold risultato"></p>
+  </div>
+  <div class="container mb-5 woila woila-2">
+    <form id="calcoloForm" class="p-3 p-md-4 bg-light rounded-3 shadow-lg" action="">
+      <div class="d-flex flex-column flex-md-row text-center">
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3 text-center"
+              id="valore-01" placeholder="a" />
           </div>
         </div>
-      </form>
-    </div>
-    <div class="container-sm my-5 woila woila-3">
-      <div class="row">
-        <div class="col">
-          <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
-            <summary>Cosa è una proporzione? Di seguito una definizione...</summary>
-            <p class="mt-4">In matematica, una proporzione è <strong>l'uguaglianza tra due rapporti</strong>. 
-              In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra loro proporzionali.</p>
-            <p>La proprietà fondamentale delle proporzioni afferma che <strong>il prodotto dei medi è uguale al prodotto degli estremi</strong>. </p>
-            <p>Se <code><strong>a&#58;b&#61;c&#58;d</strong></code>, allora <code><strong>a&times;d&#61;b&times;c</strong></code>.</p>
-          </details>
+        <div class="fs-3 pt-3"><strong>&#58;</strong></div>
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="y1" class="form-control form-control-lg fs-3 text-center"
+              id="valore-02" placeholder="b" />
+          </div>
+        </div>
+        <div class="fs-3 pt-3"><strong>&#61;</strong></div>
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="y2" class="form-control form-control-lg fs-3 text-center"
+              id="valore-03" placeholder="c" />
+          </div>
+        </div>
+        <div class="fs-3 pt-3"><strong>&#58;</strong></div>
+        <div class="w-100 p-2">
+          <p class="bg-info-subtle border rounded-1 fs-3 mb-0 pb-1 py-2 fw-bold risultato"></p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
-            <summary>Come si calcola una proporzione? Di seguito un esempio...</summary>
-            <p class="mt-4">Un <strong>caso pratico</strong>: abbiamo un'immagine larga 100 cm e dobbiamo calcolare l'altezza, proporzionale a 4:3; quanto sarà alta l'immagine?</p>
-            <p class="mb-1">Per calcolarlo dovremmo effettuare le seguenti operazioni:</p> 
-              <ul>
-                <li>
-<code class="text-nowrap">4&#58;3&#61;100&#58;<strong>X</strong></code>
-                </li>
-                <li>
-                  <code class="text-nowrap"><strong>X</strong>&#61;(3&times;100)/4</code>
-                </li>
-                <li>
-                  <code class="text-nowrap"><strong>X</strong>&#61;75</code>
-                </li>
-              </ul>
-              <p>Quindi l'immagine sarà alta: 75 cm.</p>
-            <p class="mb-1">In matematica, considerando la proporzione: <code class="text-nowrap">4&#58;3&#61;100&#58;75</code></p>
-            <ul>
-              <li>il <strong>prodotto dei medi</strong> è: <code class="text-nowrap">3&times;100&#61;<strong>300</strong></code></li>
-              <li>il <strong>prodotto degli estremi</strong> è: <code class="text-nowrap">4&times;75&#61;<strong>300</strong></code></li>
-            </ul>
-            <p>Poiché i due prodotti sono <strong>uguali</strong> a <code><strong>300</strong></code>, la proporzione è valida!</p>
-            </details>
-        </div>
+    </form>
+  </div>
+  <div class="container-sm my-5 woila woila-3">
+    <hr class="container-sm mb-5 w-25 border-0 opacity-75">
+    <div class="row">
+      <div class="col">
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Cosa è una proporzione? Di seguito una definizione...</summary>
+          <p class="mt-4">In matematica, una proporzione è <strong>l'uguaglianza tra due rapporti</strong>.
+            In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che
+            sono tra loro proporzionali.</p>
+          <p>La proprietà fondamentale delle proporzioni afferma che <strong>il prodotto dei medi è uguale al prodotto
+              degli estremi</strong>. </p>
+          <p>Se <code><strong>a&#58;b&#61;c&#58;d</strong></code>, allora
+            <code><strong>a&times;d&#61;b&times;c</strong></code>.</p>
+        </details>
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Come si calcola una proporzione? Di seguito un esempio...</summary>
+          <p class="mt-4">Un <strong>caso pratico</strong>: abbiamo un'immagine larga 100 cm e dobbiamo calcolare
+            l'altezza, proporzionale a 4:3; quanto sarà alta l'immagine?</p>
+          <p class="mb-1">Per calcolarlo dovremmo effettuare le seguenti operazioni:</p>
+          <ul>
+            <li>
+              <code class="text-nowrap">4&#58;3&#61;100&#58;<strong>X</strong></code>
+            </li>
+            <li>
+              <code class="text-nowrap"><strong>X</strong>&#61;(3&times;100)/4</code>
+            </li>
+            <li>
+              <code class="text-nowrap"><strong>X</strong>&#61;75</code>
+            </li>
+          </ul>
+          <p>Quindi l'immagine sarà alta: 75 cm.</p>
+          <p class="mb-1">In matematica, considerando la proporzione: <code
+              class="text-nowrap">4&#58;3&#61;100&#58;75</code></p>
+          <ul>
+            <li>il <strong>prodotto dei medi</strong> è: <code
+                class="text-nowrap">3&times;100&#61;<strong>300</strong></code></li>
+            <li>il <strong>prodotto degli estremi</strong> è: <code
+                class="text-nowrap">4&times;75&#61;<strong>300</strong></code></li>
+          </ul>
+          <p>Poiché i due prodotti sono <strong>uguali</strong> a <code><strong>300</strong></code>, la proporzione è
+            valida!</p>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="container-sm my-3 woila woila-3">
+    <p class="text-primary text-opacity-50 fs-6">Questo sito non utilizza cookies e non raccoglie alcun dato per rispettare la privacy.</p>
+  </div>
+  <script src="/js/confetti.min.js"></script>
+  <script src="/js/calcolo.js"></script>
+</body>
 
-    <script src="/js/confetti.min.js"></script>
-    <script src="/js/calcolo.js"></script>
-  </body>
 </html>
