@@ -5,16 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const aInput = form.querySelector("[name='x1']"); // a
   const bInput = form.querySelector("[name='y1']"); // b
   const cInput = form.querySelector("[name='y2']"); // c
-  const output = form.querySelector(".risultato");  // x (risultato finale)
+  const dInput = form.querySelector("[name='x2']"); // d
+  const output = form.querySelector(".risultato");  // risultato
 
-  if (!aInput || !bInput || !cInput || !output) return;
+  if (!aInput || !bInput || !cInput || !dInput || !output) return;
 
   // Configurazione confetti
   output.id = "risultato-confetti";
   const confetti = new Confetti("risultato-confetti");
-  confetti.setCount(75);
+  confetti.setCount(200);
   confetti.setSize(1);
-  confetti.setPower(25);
+  confetti.setPower(40);
   confetti.setFade(false);
   confetti.destroyTarget(false);
 
@@ -22,42 +23,75 @@ document.addEventListener("DOMContentLoaded", () => {
     const a = parseFloat(aInput.value);
     const b = parseFloat(bInput.value);
     const c = parseFloat(cInput.value);
+    const d = parseFloat(dInput.value);
 
-    // Se uno dei campi non è compilato → nessun risultato
-    if (!isFinite(a) || !isFinite(b) || !isFinite(c)) {
-      output.textContent = "x";
+    const valori = [a, b, c, d];
+    const vuoti = valori.filter(v => !isFinite(v)).length;
+
+    // Deve esserci esattamente un valore vuoto
+    if (vuoti !== 1) {
+      output.textContent = vuoti === 0 ? "❌ Attenzione, sono stati valorizzati troppi valori." : "Inserisci 3 valori, il 4° verrà calcolato.";
       return;
     }
 
-    // Evita divisione per 0
-    if (a === 0) {
+    let risultato, inputVuoto;
+    if (!isFinite(a)) {
+      risultato = (b * c) / d;
+      inputVuoto = aInput;
+    } else if (!isFinite(b)) {
+      risultato = (a * d) / c;
+      inputVuoto = bInput;
+    } else if (!isFinite(c)) {
+      risultato = (a * d) / b;
+      inputVuoto = cInput;
+    } else {
+      risultato = (b * c) / a;
+      inputVuoto = dInput;
+    }
+
+    if (!isFinite(risultato)) {
       output.textContent = "❌";
       return;
     }
 
-    // Formula proporzione: a : b = c : x → x = (b * c) / a
-    const x = (b * c) / a;
-
-    // Arrotonda a 5 decimali, rimuove zeri inutili
-    const xPulito = parseFloat(x.toFixed(5));
-
-    // Formattazione in stile italiano
-    output.textContent = xPulito.toLocaleString("it-IT", {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 5,
+    const risultatoPulito = parseFloat(risultato.toFixed(5));
+    inputVuoto.value = risultatoPulito;
+    output.textContent = "🎉 Proporzione calcolata!!!";
+    
+    // Aggiungi listener prima di disabilitare
+    [aInput, bInput, cInput, dInput].forEach(input => {
+      const handler = function(e) {
+        e.preventDefault();
+        input.disabled = false;
+        input.value = '';
+        output.textContent = 'Per calcolare nuovamente, reninserisci almeno 2 valori.';
+        setTimeout(() => input.focus(), 0);
+        input.removeEventListener('pointerdown', handler, true);
+      };
+      input.addEventListener('pointerdown', handler, true);
     });
+    
+    // Disabilita tutti gli input
+    aInput.disabled = true;
+    bInput.disabled = true;
+    cInput.disabled = true;
+    dInput.disabled = true;
   }
 
-  // Ricalcolo in tempo reale
-  [aInput, bInput, cInput].forEach(input =>
-    input.addEventListener("input", calcolaProporzione)
+  // Ricalcolo con debounce di 1 secondo
+  let timeoutId;
+  [aInput, bInput, cInput, dInput].forEach(input =>
+    input.addEventListener("input", () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(calcolaProporzione, 1000);
+    })
   );
 
   // Observer per i confetti quando cambia il risultato
   let previousResult = output.textContent;
   const observer = new MutationObserver(() => {
     const currentResult = output.textContent;
-    if (currentResult !== previousResult && currentResult !== "×" && currentResult !== "❌") {
+    if (currentResult !== previousResult && currentResult === "🎉 Proporzione calcolata!") {
       const rect = output.getBoundingClientRect();
       const event = new MouseEvent('click', {
         clientX: rect.left + rect.width / 2,
@@ -69,6 +103,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   observer.observe(output, { childList: true, characterData: true, subtree: true });
+
+  // Pulsante reset
+  const resetBtn = document.querySelector("#resetBtn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      aInput.value = "";
+      bInput.value = "";
+      cInput.value = "";
+      dInput.value = "";
+      aInput.disabled = false;
+      bInput.disabled = false;
+      cInput.disabled = false;
+      dInput.disabled = false;
+      output.textContent = "Inserisci 3 valori, il 4° verrà calcolato.";
+    });
+  }
 
   // Calcolo iniziale
   calcolaProporzione();
