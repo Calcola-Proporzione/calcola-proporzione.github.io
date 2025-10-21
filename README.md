@@ -9,19 +9,16 @@ Inserisci i valori e calcola la tua proporzione con la formula `a:b=c:d`, come p
 
 ---
 
-### 🤓 Perché questo progetto
-È stata l'occasione per sperimentare alcune tecnologie. 
+## Perché questo progetto
+🤓 È stata l'occasione per sperimentare alcune tecnologie. 
 
-- **Vibe Coding con Amazon Q**
-
+#### ⚫️ Vibe Coding con Amazon Q
 Questo progetto è stato sviluppato in parte grazie al supporto dell’intelligenza artificiale, che ha contribuito a **circa la metà del lavoro** complessivo. In particolare, è stato utilizzato il vibe Coding con l’assistenza di Amazon Q, sfruttando le sue capacità per ottimizzare i processi di sviluppo, migliorare l’efficienza e integrare **soluzioni più innovative** e coerenti con gli obiettivi del progetto.
 
-- **Don't worry, welcome AI!**
-
+#### 🔵 Don't worry, welcome AI!
 L’arrivo di queste tecnologie mi ha permesso di realizzare un prodotto che, in passato, avrei potuto completare solo con un impegno almeno cinque volte maggiore in termini di tempo ed energie, dimostrando quanto l’AI possa davvero amplificare la produttività umana.
 
-- **Raggiungere il top nei report**
+#### 🟢 Raggiungere il top nei report
+Raggiungere i punteggi più alti nei report di **Lighthouse** di **Google Chrome** significa lavorare con attenzione su ogni dettaglio: **prestazioni**, **accessibilità**, **SEO** e buone pratiche di sviluppo. Un sito ottimizzato in questo modo non solo risulta più veloce e affidabile, ma offre anche un’esperienza utente superiore e un posizionamento migliore nei motori di ricerca.
 
 <img width="500" height="116" alt="image" src="https://github.com/user-attachments/assets/4430df34-c04f-4388-8d8f-2a792d000a25" />
-
-Raggiungere i punteggi più alti nei report di **Lighthouse** di **Google Chrome** significa lavorare con attenzione su ogni dettaglio: **prestazioni**, **accessibilità**, **SEO** e buone pratiche di sviluppo. Un sito ottimizzato in questo modo non solo risulta più veloce e affidabile, ma offre anche un’esperienza utente superiore e un posizionamento migliore nei motori di ricerca.
