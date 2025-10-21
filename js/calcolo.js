@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Deve esserci esattamente un valore vuoto
     if (vuoti !== 1) {
-      output.textContent = vuoti === 0 ? "❌ Attenzione, sono stati valorizzati troppi valori." : "Inserisci 3 valori, il 4° verrà calcolato.";
+      output.textContent = vuoti === 0 ? "❌ Attenzione, sono stati impostati troppi valori." : "Inserisci 3 valori, il 4° verrà calcolato.";
       return;
     }
 
