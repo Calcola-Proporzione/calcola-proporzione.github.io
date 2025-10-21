@@ -19,3 +19,9 @@ Questo progetto è stato sviluppato in parte grazie al supporto dell’intellige
 - **Don't worry, welcome AI!**
 
 L’arrivo di queste tecnologie mi ha permesso di realizzare un prodotto che, in passato, avrei potuto completare solo con un impegno almeno cinque volte maggiore in termini di tempo ed energie, dimostrando quanto l’AI possa davvero amplificare la produttività umana.
+
+- **Raggiungere il top nei report**
+
+<img width="500" height="116" alt="image" src="https://github.com/user-attachments/assets/4430df34-c04f-4388-8d8f-2a792d000a25" />
+
+Raggiungere i punteggi più alti nei report di **Lighthouse** di **Google Chrome** significa lavorare con attenzione su ogni dettaglio: **prestazioni**, **accessibilità**, **SEO** e buone pratiche di sviluppo. Un sito ottimizzato in questo modo non solo risulta più veloce e affidabile, ma offre anche un’esperienza utente superiore e un posizionamento migliore nei motori di ricerca.
