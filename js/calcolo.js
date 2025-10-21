@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         input.disabled = false;
         input.value = '';
-        output.textContent = 'Per calcolare nuovamente, reninserisci almeno 2 valori.';
+        output.textContent = 'Per calcolare nuovamente, cancella almeno 2 valori.';
         setTimeout(() => input.focus(), 0);
         input.removeEventListener('pointerdown', handler, true);
       };
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let previousResult = output.textContent;
   const observer = new MutationObserver(() => {
     const currentResult = output.textContent;
-    if (currentResult !== previousResult && currentResult === "🎉 Proporzione calcolata!") {
+    if (currentResult !== previousResult && currentResult === "🎉 Proporzione calcolata!!!") {
       const rect = output.getBoundingClientRect();
       const event = new MouseEvent('click', {
         clientX: rect.left + rect.width / 2,
