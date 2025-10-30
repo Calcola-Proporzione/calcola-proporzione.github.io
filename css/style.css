@@ -45,7 +45,7 @@ strong {
   max-width: 620px;
 }
 .container-form {
-  min-height: 56vh;
+  min-height: 48vh;
 }
 /* .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-control:focus ~ label::after,
