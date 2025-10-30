@@ -44,6 +44,9 @@ strong {
 .container-sm {
   max-width: 620px;
 }
+.container-form {
+  min-height: 56vh;
+}
 /* .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
@@ -72,16 +75,16 @@ strong {
 
 .woila {
   opacity: 0;
-  animation: woila 2s ease-in-out forwards;
+  animation: woila 1s ease-in-out forwards;
 }
 .woila-1 {
-  animation-delay: .5s;
+  animation-delay: .2s;
 }
 .woila-2 {
-  animation-delay: 1s;
+  animation-delay: .4s;
 }
 .woila-3 {
-  animation-delay: 1.5s;
+  animation-delay: .6s;
 }
 @keyframes woila {
   0% {
