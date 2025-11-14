@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bInput = form.querySelector("[name='y1']"); // b
   const cInput = form.querySelector("[name='y2']"); // c
   const dInput = form.querySelector("[name='x2']"); // d
-  const output = form.querySelector(".risultato"); // risultato
+  const output = form.querySelector(".risultato");  // risultato
 
   if (!aInput || !bInput || !cInput || !dInput || !output) return;
 
@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const d = parseFloat(dInput.value);
 
     const valori = [a, b, c, d];
-    const vuoti = valori.filter((v) => !isFinite(v)).length;
+    const vuoti = valori.filter(v => !isFinite(v)).length;
 
     // Deve esserci esattamente un valore vuoto
     if (vuoti !== 1) {
-      output.textContent = vuoti === 0 ? "❌ Warning, too many values have been entered." : "Enter 3 values, the 4th will be calculated.";
+      output.textContent = vuoti === 0 ? "❌ Attenzione, sono stati impostati troppi valori." : "Inserisci 3 valori, il 4° verrà calcolato.";
       return;
     }
 
@@ -56,21 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const risultatoPulito = parseFloat(risultato.toFixed(5));
     inputVuoto.value = risultatoPulito;
-    output.textContent = "🎉 Proportion calculated!!!";
-
+    output.textContent = "🎉 Proporzione calcolata!!!";
+    
     // Aggiungi listener prima di disabilitare
-    [aInput, bInput, cInput, dInput].forEach((input) => {
-      const handler = function (e) {
+    [aInput, bInput, cInput, dInput].forEach(input => {
+      const handler = function(e) {
         e.preventDefault();
         input.disabled = false;
-        input.value = "";
-        output.textContent = "To calculate again, clear at least 2 values.";
+        input.value = '';
+        output.textContent = 'Per calcolare nuovamente, cancella almeno 2 valori.';
         setTimeout(() => input.focus(), 0);
-        input.removeEventListener("pointerdown", handler, true);
+        input.removeEventListener('pointerdown', handler, true);
       };
-      input.addEventListener("pointerdown", handler, true);
+      input.addEventListener('pointerdown', handler, true);
     });
-
+    
     // Disabilita tutti gli input
     aInput.disabled = true;
     bInput.disabled = true;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ricalcolo con debounce di 1 secondo
   let timeoutId;
-  [aInput, bInput, cInput, dInput].forEach((input) =>
+  [aInput, bInput, cInput, dInput].forEach(input =>
     input.addEventListener("input", () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(calcolaProporzione, 1000);
@@ -91,17 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let previousResult = output.textContent;
   const observer = new MutationObserver(() => {
     const currentResult = output.textContent;
-    if (currentResult !== previousResult && currentResult === "🎉 Proportion calculated!!!") {
+    if (currentResult !== previousResult && currentResult === "🎉 Proporzione calcolata!!!") {
       const rect = output.getBoundingClientRect();
-      const event = new MouseEvent("click", {
+      const event = new MouseEvent('click', {
         clientX: rect.left + rect.width / 2,
-        clientY: rect.top + rect.height / 2,
+        clientY: rect.top + rect.height / 2
       });
       output.dispatchEvent(event);
     }
     previousResult = currentResult;
   });
-
+  
   observer.observe(output, { childList: true, characterData: true, subtree: true });
 
   // Pulsante reset
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bInput.disabled = false;
       cInput.disabled = false;
       dInput.disabled = false;
-      output.textContent = "Enter 3 values, the 4th will be calculated.";
+      output.textContent = "Inserisci 3 valori, il 4° verrà calcolato.";
     });
   }
 

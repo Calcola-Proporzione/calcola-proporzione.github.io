@@ -6,4 +6,10 @@
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
+  <url>
+    <loc>https://calcola-proporzione.github.io/ita.html</loc>
+    <lastmod>2025-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
 </urlset>
