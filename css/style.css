@@ -56,6 +56,13 @@ strong {
 .risultato {
 	cursor: progress;
 }
+#calcoloForm:not(:hover) {
+  transition: all 1s ease-in-out;
+}
+#calcoloForm:hover {
+  transition: all .6s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 0px 8px 0px !important;
+}
 @media (max-width: 767px) {
   #calcoloForm .d-flex:not(:first-child) {
     display: inline-block !important;
