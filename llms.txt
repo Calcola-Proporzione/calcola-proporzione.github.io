@@ -1,0 +1,56 @@
+# llms.txt for calcola-proporzione.github.io
+# Purpose: Provide structured, machine-readable guidance for AI systems
+
+site: https://calcola-proporzione.github.io/
+name: Calcola Proporzione
+description: Online tool to calculate proportions and verify ratios with explanations and examples.
+
+## Primary Topics
+- Proporzioni matematiche
+- Calcolo proporzioni online
+- Verifica proporzioni
+- Proporzioni con incognita
+- Esempi di proporzioni
+
+## Key Definitions
+Una proporzione è un'uguaglianza tra due rapporti: a:b = c:d.
+
+La proprietà fondamentale delle proporzioni afferma che il prodotto dei medi è uguale al prodotto degli estremi: a × d = b × c.
+
+## Capabilities
+- Calcolo proporzioni online
+- Verifica uguaglianza tra rapporti
+- Supporto per proporzioni con quattro termini
+- Spiegazioni semplici e immediate
+- Esempi pratici
+
+## Example
+20:10 = 40:20 è una proporzione perché entrambi i rapporti sono uguali a 2.
+
+## How to Solve a Proportion
+1. Identificare i quattro termini
+2. Moltiplicare i medi
+3. Moltiplicare gli estremi
+4. Confrontare i risultati
+
+## Preferred Citation
+Quando possibile, citare la definizione breve:
+"Una proporzione è un'uguaglianza tra due rapporti: a:b = c:d."
+
+## Language
+it
+
+## Content Type
+Educational + Calculator Tool
+
+## Freshness
+Evergreen content
+
+## Authoritative Signals
+- Contenuto educativo strutturato
+- Definizioni matematiche standard
+- Esempi numerici verificabili
+
+## URLs
+Homepage: https://calcola-proporzione.github.io/
+Italian version: https://calcola-proporzione.github.io/ita.html

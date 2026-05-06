@@ -1,191 +1,323 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="public, max-age=86400" />
-    <meta http-equiv="Expires" content="Tue, 01 Jan 2030 00:00:00 GMT" />
 
-    <title>÷ Calcolatore di proporzioni online</title>
-    <meta name="description" content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="public, max-age=86400" />
+  <meta http-equiv="Expires" content="Tue, 01 Jan 2030 00:00:00 GMT" />
 
-    <meta name="keywords" content="proporzioni, calcolo, divisione, moltiplicazione, operazione" />
-    <meta name="author" content="Marco Gargano" />
-    <meta name="theme-color" content="#ffc0cb" />
+  <title>÷ Calcola proporzioni online (con spiegazione ed esempi)</title>
+  <meta name="description"
+    content="Calcola proporzioni online facilmente. Scopri cos'è una proporzione, come risolverla e guarda esempi pratici.">
 
-    <link rel="canonical" href="https://calcola-proporzione.github.io/ita.html" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="/img/calcola-proporzione-favicon.ico" />
-    <link rel="icon" type="image/png" href="/img/calcola-proporzione-favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/img/calcola-proporzione-favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/calcola-proporzione-apple-touch-icon.png" />
+  <meta name="keywords" content="proporzioni, calcolo, divisione, moltiplicazione, operazione" />
+  <meta name="author" content="Marco Gargano" />
+  <meta name="theme-color" content="#ffc0cb" />
 
-    <meta property="og:url" content="https://calcola-proporzione.github.io/ita.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="÷ Calcolatore di proporzioni online" />
-    <meta property="og:description" content="Strumento di calcolo matematico semplice ed effervescente. Inserisci i valori e calcola la tua proporzione." />
-    <meta property="og:image" content="https://calcola-proporzione.github.io/img/calcola-proporzione-share-it.jpg" />
+  <link rel="canonical" href="https://calcola-proporzione.github.io/ita.html" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/img/calcola-proporzione-favicon.ico" />
+  <link rel="icon" type="image/png" href="/img/calcola-proporzione-favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/img/calcola-proporzione-favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/calcola-proporzione-apple-touch-icon.png" />
 
-    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/a5aeaa537f977fadc650f5edd90afa59.js"></script>
-    <link rel="stylesheet" href="/css/style-bs.css?v=1.1" />
-    <link rel="stylesheet" href="/css/style.css?v=1.2" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K63ZG7P29M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+  <meta property="og:title" content="÷ Calcola proporzioni online" />
+  <meta property="og:url" content="https://calcola-proporzione.github.io/ita.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Calcola proporzioni e scopri come risolverle con esempi pratici.">
+  <meta property="og:image" content="https://calcola-proporzione.github.io/img/calcola-proporzione-share-it.jpg" />
+
+  <script type="text/javascript" charset="UTF-8"
+    src="//cdn.cookie-script.com/s/a5aeaa537f977fadc650f5edd90afa59.js"></script>
+  <link rel="stylesheet" href="/css/style-bs.css?v=1.1" />
+  <link rel="stylesheet" href="/css/style.css?v=1.2" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quando una proporzione è corretta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una proporzione è corretta quando i due rapporti hanno lo stesso valore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si verifica una proporzione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Si verifica moltiplicando medi ed estremi e confrontando i risultati."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A cosa servono le proporzioni?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Servono per confrontare grandezze e risolvere problemi matematici e pratici."
+        }
       }
-      gtag("js", new Date());
-      gtag("config", "G-K63ZG7P29M");
-    </script>
-  </head>
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Come risolvere una proporzione",
+    "step": [
+      { "@type": "HowToStep", "text": "Individua i quattro termini della proporzione." },
+      { "@type": "HowToStep", "text": "Moltiplica i medi." },
+      { "@type": "HowToStep", "text": "Moltiplica gli estremi." },
+      { "@type": "HowToStep", "text": "Verifica che i prodotti siano uguali." }
+    ]
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K63ZG7P29M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-K63ZG7P29M");
+  </script>
+</head>
 
-  <body class="min-vh-100 bg-secondary">
-    <div class="container-sm woila">
-      <div class="row">
-        <div class="col pt-3">
-          <div class="btn-group">
-            <a href="/" class="d-flex align-items-center btn btn-outline-light text-black px-3 fs-6">
-              <svg class="me-2" height="12" xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480">
-                <path fill="#012169" d="M0 0h640v480H0z"></path>
-                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"></path>
-                <path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"></path>
-                <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"></path>
-                <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"></path>
-              </svg>
-              ENG</a
-            >
-            <a href="/ita.html" class="d-flex align-items-center btn btn-outline-light px-3 fs-6 active" aria-current="page">
-              <svg class="me-2" height="12" xmlns="http://www.w3.org/2000/svg" id="flag-icons-it" viewBox="0 0 640 480">
-                <g fill-rule="evenodd" stroke-width="1pt">
-                  <path fill="#fff" d="M0 0h640v480H0z"></path>
-                  <path fill="#009246" d="M0 0h213.3v480H0z"></path>
-                  <path fill="#ce2b37" d="M426.7 0H640v480H426.7z"></path>
-                </g>
-              </svg>
-              ITA</a
-            >
-          </div>
+<body class="min-vh-100 bg-secondary">
+  <div class="container-sm woila">
+    <div class="row">
+      <div class="col pt-3">
+        <div class="btn-group">
+          <a href="/" class="d-flex align-items-center btn btn-outline-light text-black px-3 fs-6">
+            <svg class="me-2" height="12" xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480">
+              <path fill="#012169" d="M0 0h640v480H0z"></path>
+              <path fill="#FFF"
+                d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"></path>
+              <path fill="#C8102E"
+                d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z">
+              </path>
+              <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"></path>
+              <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"></path>
+            </svg>
+            ENG</a>
+          <a href="/ita.html" class="d-flex align-items-center btn btn-outline-light px-3 fs-6 active"
+            aria-current="page">
+            <svg class="me-2" height="12" xmlns="http://www.w3.org/2000/svg" id="flag-icons-it" viewBox="0 0 640 480">
+              <g fill-rule="evenodd" stroke-width="1pt">
+                <path fill="#fff" d="M0 0h640v480H0z"></path>
+                <path fill="#009246" d="M0 0h213.3v480H0z"></path>
+                <path fill="#ce2b37" d="M426.7 0H640v480H426.7z"></path>
+              </g>
+            </svg>
+            ITA</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container-sm woila" role="main">
-      <div class="row">
-        <div class="col mt-5 pt-5">
-          <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola proporzione</small></h1>
-          <h2 class="h1 lh-1">÷ Calcolatore di proporzioni online</h2>
-        </div>
+  <div class="container-sm woila" role="main">
+    <div class="row">
+      <div class="col-md-10 mt-5 pt-5">
+        <h1 class="badge rounded-pill text-bg-light bg-opacity-50 mb-3 text-uppercase fs-6"><small>Calcola proporzioni
+            online</small></h1>
+        <h2 class="h1 lh-1">÷ Calcola proporzioni online</h2>
+        <p class="my-4">Inserisci quattro valori per verificare una proporzione o calcolare il termine incognito.</p>
       </div>
     </div>
-    <div class="container container-form d-flex align-items-center my-5 woila woila-1" role="form">
-      <form id="calcoloForm" class="p-3 p-md-4 mb-5 bg-light rounded-3 shadow-lg" action="">
-        <div class="container-sm d-flex align-items-start justify-content-between my-3 my-md-0" style="height: 40px">
-          <p class="fs-6 mb-0 fw-bold lh-sm opacity-75 w-100 risultato"></p>
-          <button type="button" class="btn btn-sm btn-outline-dark lh-sm fw-bold py-0 ms-2 opacity-75" id="resetBtn"><small>Reset</small></button>
-        </div>
+  </div>
+  <div class="container container-form d-flex align-items-center my-5 woila woila-1" role="form">
+    <form id="calcoloForm" class="p-3 p-md-4 mb-5 bg-light rounded-3 shadow-lg" action="">
+      <div class="container-sm d-flex align-items-start justify-content-between my-3 my-md-0" style="height: 40px">
+        <p class="fs-6 mb-0 fw-bold lh-sm opacity-75 w-100 risultato"></p>
+        <button type="button" class="btn btn-sm btn-outline-dark lh-sm fw-bold py-0 ms-2 opacity-75"
+          id="resetBtn"><small>Reset</small></button>
+      </div>
 
-        <div class="d-flex flex-column flex-md-row text-center">
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3 text-center" id="valore-01" placeholder="a" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="y1" class="form-control form-control-lg fs-3 text-center" id="valore-02" placeholder="b" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#61;</strong></div>
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="y2" class="form-control form-control-lg fs-3 text-center" id="valore-03" placeholder="c" />
-            </div>
-          </div>
-          <div class="fs-3 pt-3"><strong>&#58;</strong></div>
-          <div class="w-100 p-2">
-            <div class="">
-              <input type="number" step="any" name="x2" class="form-control form-control-lg fs-3 text-center" id="valore-04" placeholder="d" />
-            </div>
+      <div class="d-flex flex-column flex-md-row text-center">
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="x1" class="form-control form-control-lg fs-3 text-center"
+              id="valore-01" placeholder="a" />
           </div>
         </div>
-      </form>
+        <div class="fs-3 pt-3"><strong>&#58;</strong></div>
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="y1" class="form-control form-control-lg fs-3 text-center"
+              id="valore-02" placeholder="b" />
+          </div>
+        </div>
+        <div class="fs-3 pt-3"><strong>&#61;</strong></div>
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="y2" class="form-control form-control-lg fs-3 text-center"
+              id="valore-03" placeholder="c" />
+          </div>
+        </div>
+        <div class="fs-3 pt-3"><strong>&#58;</strong></div>
+        <div class="w-100 p-2">
+          <div class="">
+            <input type="number" step="any" name="x2" class="form-control form-control-lg fs-3 text-center"
+              id="valore-04" placeholder="d" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-sm mt-5 mb-4 woila woila-2">
+    <div class="row">
+      <div class="col">
+        <h3 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h3>
+        <p class="">Inserisci i valori e calcola la tua proporzione con la formula del tipo <code
+            class="text-nowrap">a&#58;b&#61;c&#58;d</code>, come per esempio <code
+            class="text-nowrap">4&#58;3&#61;100&#58;X</code> &#8658; <code
+            class="text-nowrap">X&#61;(3&times;100)/4</code>.</p>
+      </div>
     </div>
-    <div class="container-sm mt-5 mb-4 woila woila-2">
+  </div>
+  <div class="container-sm my-5 woila woila-3" role="contentinfo">
+    <!-- <hr class="container-sm mb-5 w-25 border-0 opacity-75"> -->
+
+
+    <div class="row">
+      <div class="col">
+
+        <!-- RISPOSTA DIRETTA -->
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Cos'è una proporzione?</summary>
+          <p class="mt-4">In matematica, una proporzione è <strong>l'uguaglianza tra due rapporti</strong>. In altre
+            parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra
+            loro proporzionali.</p>
+        </details>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- PROPRIETÀ -->
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Proprietà fondamentale delle proporzioni</summary>
+          <p class="mt-4">Il prodotto dei medi è uguale al prodotto degli estremi: <strong class="text-nowrap">a × d = b
+              × c</strong></p>
+        </details>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- ESEMPIO -->
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Esempio di proporzione</summary>
+          <p class="mt-4"><strong class="text-nowrap">20:10 = 40:20</strong> è una proporzione perché entrambi i
+            rapporti sono uguali a 2.</p>
+        </details>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- HOW TO -->
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Come risolvere una proporzione</summary>
+
+          <ol class="ps-3 pt-4 pb-1">
+            <li>Individua i quattro termini</li>
+            <li>Moltiplica i medi</li>
+            <li>Moltiplica gli estremi</li>
+            <li>Verifica che i prodotti siano uguali</li>
+          </ol>
+
+        </details>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- INCOGNITA -->
+        <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+          <summary>Come trovare il termine incognito</summary>
+          <p class="mt-4">Se conosci tre termini, puoi trovare il quarto usando la formula: <strong
+              class="text-nowrap">d = (b × c) / a</strong></p>
+        </details>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h6 class="my-4">Domande frequenti</h2>
+
       <div class="row">
         <div class="col">
-          <h3 class="fs-5"><strong>Strumento di calcolo matematico semplice ed effervescente.</strong></h3>
-          <p class="">Inserisci i valori e calcola la tua proporzione con la formula <code class="text-nowrap">a&#58;b&#61;c&#58;d</code>, come per esempio <code class="text-nowrap">4&#58;3&#61;100&#58;X</code> &#8658; <code class="text-nowrap">X&#61;(3&times;100)/4</code>.</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-sm my-5 woila woila-3" role="contentinfo">
-      <!-- <hr class="container-sm mb-5 w-25 border-0 opacity-75"> -->
-      <div class="row">
-        <div class="col">
+
           <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
-            <summary>Cosa è una proporzione? Di seguito una definizione...</summary>
-            <p class="mt-4">In matematica, una proporzione è <strong>l'uguaglianza tra due rapporti</strong>. In altre parole, è una relazione che stabilisce un'equivalenza tra quattro grandezze, dette termini, che sono tra loro proporzionali.</p>
-            <p>La proprietà fondamentale delle proporzioni afferma che <strong>il prodotto dei medi è uguale al prodotto degli estremi</strong>.</p>
-            <p>
-              Se <code><strong>a&#58;b&#61;c&#58;d</strong></code
-              >, allora <code><strong>a&times;d&#61;b&times;c</strong></code
-              >.
-            </p>
+            <summary>Quando una proporzione è corretta?</summary>
+            <p class="mt-4">Quando i due rapporti hanno lo stesso valore.</p>
           </details>
         </div>
       </div>
       <div class="row">
         <div class="col">
+
           <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
-            <summary>Come si calcola una proporzione? Di seguito un esempio...</summary>
-            <p class="mt-4">Un <strong>caso pratico</strong>: abbiamo un'immagine larga 100 cm e dobbiamo calcolare l'altezza, proporzionale a 4:3; quanto sarà alta l'immagine?</p>
-            <p class="mb-1">Per calcolarlo dovremmo effettuare le seguenti operazioni:</p>
-            <ul>
-              <li>
-                <code class="text-nowrap">4&#58;3&#61;100&#58;<strong>X</strong></code>
-              </li>
-              <li>
-                <code class="text-nowrap"><strong>X</strong>&#61;(3&times;100)/4</code>
-              </li>
-              <li>
-                <code class="text-nowrap"><strong>X</strong>&#61;75</code>
-              </li>
-            </ul>
-            <p>Quindi l'immagine sarà alta: 75 cm.</p>
-            <p class="mb-1">In matematica, considerando la proporzione: <code class="text-nowrap">4&#58;3&#61;100&#58;75</code></p>
-            <ul>
-              <li>
-                il <strong>prodotto dei medi</strong> è: <code class="text-nowrap">3&times;100&#61;<strong>300</strong></code>
-              </li>
-              <li>
-                il <strong>prodotto degli estremi</strong> è: <code class="text-nowrap">4&times;75&#61;<strong>300</strong></code>
-              </li>
-            </ul>
-            <p>
-              Poiché i due prodotti sono <strong>uguali</strong> a <code><strong>300</strong></code
-              >, la proporzione è valida!
-            </p>
+            <summary>A cosa servono le proporzioni?</summary>
+            <p class="mt-4">Servono per confrontare grandezze e risolvere problemi matematici e reali.</p>
           </details>
         </div>
       </div>
-    </div>
-    <div class="container-sm my-3 woila woila-3">
-      <p class="text-primary fs-6">
-        Non si utilizzano cookies e nessun dato viene raccolto per rispettare la privacy.
+      <div class="row">
+        <div class="col">
 
-        <a class="float-end ms-2 opacity-75" aria-label="GitHub Homepage" href="https://github.com/Calcola-Proporzione/calcola-proporzione.github.io" target="_blank">
-          <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="20" data-view-component="true" class="octicon octicon-mark-github">
-            <path
-              d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"
-            ></path>
-          </svg>
-        </a>
-      </p>
-    </div>
-    <script defer src="/js/confetti.min.js?v=1.0"></script>
-    <script defer src="/js/calcolo-it.js?v=1.0"></script>
-  </body>
+          <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+            <summary>Come si verifica una proporzione?</summary>
+            <p class="mt-4">Moltiplicando medi ed estremi e confrontando i risultati.</p>
+          </details>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+
+          <!-- RISPOSTA VELOCE -->
+          <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+            <summary>Risposta veloce</summary>
+            <p class="mt-4">Una proporzione è un'uguaglianza tra due rapporti. Si verifica quando <strong
+                class="text-nowrap">a × d = b × c</strong>.</p>
+          </details>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+
+          <!-- SEO EXPANSION -->
+          <details class="p-3 rounded-3 px-4 mb-3 bg-primary bg-opacity-10">
+            <summary>Calcolare proporzioni nella pratica</summary>
+            <p class="mt-4">Le proporzioni vengono utilizzate in matematica, economia, cucina e fisica per risolvere
+              problemi di
+              equivalenza
+              tra grandezze.</p>
+          </details>
+        </div>
+      </div>
+
+
+  </div>
+  <div class="container-sm my-3 woila woila-3">
+    <p class="text-primary fs-6">
+      Non si utilizzano cookies e nessun dato viene raccolto per rispettare la privacy.
+
+      <a class="float-end ms-2 opacity-75" aria-label="GitHub Homepage"
+        href="https://github.com/Calcola-Proporzione/calcola-proporzione.github.io" target="_blank">
+        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="20" data-view-component="true"
+          class="octicon octicon-mark-github">
+          <path
+            d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+          </path>
+        </svg>
+      </a>
+    </p>
+  </div>
+  <script defer src="/js/confetti.min.js?v=1.0"></script>
+  <script defer src="/js/calcolo-it.js?v=1.0"></script>
+</body>
+
 </html>
